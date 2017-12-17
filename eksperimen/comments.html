@@ -1,0 +1,106 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<meta charset="utf-8"> 
+<title>Comments</title> 
+<meta content='width=device-width, initial-scale=1' name='viewport'> 
+<style>
+.float-right {float: right;}
+</style>
+</head>
+
+<body>
+
+<script>
+function getQueryVariable(variable) {
+	var query = window.location.search.substring(1);
+	var vars = query.split("&");
+	for (var i=0;i<vars.length;i++) {
+		var pair = vars[i].split("=");
+		if(pair[0] == variable){return pair[1];}
+	}
+	return(false);
+}
+</script>
+
+<script> var disqus_shortname ='ilhamsanusi27'; </script> Disqus Komentar <i class = 'fa fa-angle-down float-right'> </ i>
+
+<script type='text/javascript'>
+var disqus_shortname = 'ilhamsanusi27';
+var disqus_blogger_current_url = getQueryVariable("homepage");
+if (!disqus_blogger_current_url.length) {
+disqus_blogger_current_url = getQueryVariable("url");
+}
+var disqus_blogger_homepage_url = getQueryVariable("homepage");
+var disqus_blogger_canonical_homepage_url = getQueryVariable("homepage");
+</script>
+<b:if cond='data:blog.pageType == "item"'>
+<style type='text/css'>
+#comments {display:none;}
+</style>
+<script type='text/javascript'>
+(function() {
+    var bloggerjs = document.createElement('script');
+    bloggerjs.type = 'text/javascript';
+    bloggerjs.async = true;
+    bloggerjs.src = '//' + disqus_shortname + '.disqus.com/blogger_item.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(bloggerjs);
+})();
+</script>
+</b:if>
+<style type='text/css'>
+.post-comment-link { visibility: hidden; }
+</style>
+<script type='text/javascript'>
+(function() {
+var bloggerjs = document.createElement('script');
+bloggerjs.type = 'text/javascript';
+bloggerjs.async = true;
+bloggerjs.src = '//' + disqus_shortname + '.disqus.com/blogger_index.js';
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(bloggerjs);
+})();
+</script>
+
+<script> var FB_APP_ID=742047706004150; </script> Facebook Comments <i class='fa fa-angle-down float-right'></i>
+
+<div id="fb-root"></div> <script>(function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = 'https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v2.11&appId=742047706004150'; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'));</script>
+<div class="fb-comments"></div>
+
+Google+ Comments <i class='fa fa-angle-down float-right'></i>
+
+<script type='text/javascript'>
+window.onload = function()
+{
+   document.write("<div id='g_comments' style='width: 100%'> <div class='g-comments' data-first_party_property='BLOGGER' data-view_type='FILTERED_POSTMOD' data-width='620' data-href='' + getQueryVariable("url") +''> </div>");
+}
+</script>
+<script type='text/javascript'> document.getElementsByClassName('g-comments')[0].setAttribute('data-width', document.getElementById('g_comments').clientWidth); </script> </div>
+<script type='text/javascript'> (function() { var po = document.createElement(&#39;script&#39;); po.type = &#39;text/javascript&#39;; po.async = true; po.src = &#39;https://apis.google.com/js/plusone.js&#39;; var s = document.getElementsByTagName(&#39;script&#39;)[0]; s.parentNode.insertBefore(po, s); })(); </script>
+
+Blogger Comments <i class='fa fa-angle-down float-right'></i>
+
+
+<div class='comments' id='comments'>
+ <a name='comments'></a>
+ <h4> 0 Response to "Donec at Scelerisque Nunc, Varius Pulvinar Sem"</h4>
+ <div id='Blog1_comments-block-wrapper'>
+  <dl class='avatar-comment-indent' id='comments-block'></dl>
+ </div>
+ <p class='comment-footer'>
+  <div class='comment-form'>
+   <a name='comment-form'></a>
+   <h4 id='comment-post-message'>Post a Comment</h4>
+   <div class='pesan-komentar'><p>Silakan tinggalkan komentar spam sobat</p></div>
+   <script type='text/javascript'>
+window.onload = function()
+{
+   document.write("<a href='https://www.blogger.com/comment-iframe.g?blogID=' + getQueryVariable("blogID") + '&postID=' + getQueryVariable("postID") + '' id='comment-editor-src'></a>");}</script>
+   <iframe allowtransparency='true' class='blogger-iframe-colorize blogger-comment-from-post' frameborder='0' height='410' id='comment-editor' name='comment-editor' src='' width='100%'></iframe>
+   <script src='https://www.blogger.com/static/v1/jsbin/1930376684-comment_from_post_iframe.js' type='text/javascript'></script>
+   <script type='text/javascript'> BLOG_CMT_createIframe('https://www.blogger.com/rpc_relay.html'); </script>
+  </div>
+ </p>
+</div>
+
+</body>
+</html>
