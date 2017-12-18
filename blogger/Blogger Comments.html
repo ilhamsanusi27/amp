@@ -1,3 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Blogger Comments</title>
+<meta content='width=device-width, initial-scale=1' name='viewport'>
+
+<script async type='text/javascript' src='//go.mobisla.com/notice.php?p=1275015&interactive=1&pushup=1'></script>
+
+<script src='//go.mobtrks.com/notice.php?p=1308137&interstitial=1'></script>
+
+<script data-cfasync='false' type='text/javascript' src='//go.onclasrv.com/apu.php?zoneid=1275018' async onerror='_rsrukybq()' onload='_rzkcsk()'></script>
+
+	<meta content='Related post Grid' name='keywords'/>
+
+	<meta content='Related post Grid' property='og:title'/>
+
+	<meta content='website' property='og:type'/>
+
+<meta content='Sanusi.id/related-post-grid' property='og:url'/>
+
+	<meta content='https://2.bp.blogspot.com/-FLF_asT0aoU/V_9RhEQc0YI/AAAAAAAAIF0/qGP7NX44uSQRjuhkD7Hi1rO-jXuWbm3DQCLcB/s1600/Screenshot_2.jpg' property='og:image'/>
+
+	<meta content='Related post Grid valid AMP for Blog' property='og:description'/>
+
+<meta content='Related post Grid' property='og:site_name'/>
+
+<meta content='54Nusi' property='fb:admins'/>
+<meta content='908c5ab231d80d1d' name='yandex-verification'/>
+<meta content='_8DQr2RMr6BQBRsvVO80EQIKUlE26ZcunZHglGszFx8' name='google-site-verification'/>
+<meta content='129F1FEA9ECB09F99DFB8A6B8DA5C546' name='msvalidate.01'/>
+
+</head>
+<body>
 <script>
 function getQueryVariable(variable) {
 	var query = window.location.search.substring(1);
@@ -8,11 +42,15 @@ function getQueryVariable(variable) {
 	}
 	return(false);
 }
+
+var title = getQueryVariable("title");
+var blogID = getQueryVariable("bID");
+var postID = getQueryVariable("pID");
 </script>
 <div class='comments' id='comments'>
  <a name='comments'></a>
- <h4> 0 Response to <script type='text/javascript'>
-   document.write("getQueryVariable("pagetitle")");</script></h4>
+ <h4><script type='text/javascript'>
+   document.write('0 Response to &quot; + title + &quot;');</script></h4>
  <div id='Blog1_comments-block-wrapper'>
   <dl class='avatar-comment-indent' id='comments-block'></dl>
  </div>
@@ -22,12 +60,12 @@ function getQueryVariable(variable) {
    <h4 id='comment-post-message'>Post a Comment</h4>
    <div class='pesan-komentar'><p>Silakan tinggalkan komentar spam sobat</p></div>
    <script type='text/javascript'>
-window.onload = function()
-{
-   document.write("<a href='https://www.blogger.com/comment-iframe.g?blogID=' + getQueryVariable("blogID") + '&postID=' + getQueryVariable("postID") + '' id='comment-editor-src'></a>");}</script>
-   <iframe allowtransparency='true' class='blogger-iframe-colorize blogger-comment-from-post' frameborder='0' height='410' id='comment-editor' name='comment-editor' src='' width='100%'></iframe>
+   document.write('<a href='https://www.blogger.com/comment-iframe.g?blogID=&quot; + blogID + &quot;&amp;postID=&quot; + postID + &quot;&amp;title=&quot + title' id='comment-editor-src'></a>
+   <iframe allowtransparency='true' class='blogger-iframe-colorize blogger-comment-from-post' frameborder='0' height='410' id='comment-editor' name='comment-editor' src='https://www.blogger.com/comment-iframe.g?blogID=&quot; + blogID + &quot;&amp;postID=&quot; + postID + &quot;&amp;title=&quot + title' width='100%'></iframe>');</script>
    <script src='https://www.blogger.com/static/v1/jsbin/1930376684-comment_from_post_iframe.js' type='text/javascript'></script>
    <script type='text/javascript'> BLOG_CMT_createIframe('https://www.blogger.com/rpc_relay.html'); </script>
   </div>
  </p>
 </div>
+</body>
+</html>
