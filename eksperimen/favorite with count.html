@@ -34,10 +34,11 @@
 
 <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
 
-<amp-state id="favoriteWithCount" credentials="include" src="https://cdn.rawgit.com/ilhamsanusi27/amp/7d6d6ce8/eksperimen/count.json"> </amp-state>
-
 </head>
 <body>
+
+<amp-state id="favoriteWithCount" credentials="include" src="https://cdn.rawgit.com/ilhamsanusi27/amp/7d6d6ce8/eksperimen/count.json"> </amp-state>
+
 <form method="post" action-xhr="https://cdn.rawgit.com/ilhamsanusi27/amp/7d6d6ce8/eksperimen/count.json" target="_top" on="submit:AMP.setState({ previousFavoriteWithCount: favoriteWithCount, favoriteWithCount: { value: !favoriteWithCount.value, count: favoriteWithCount.count + (favoriteWithCount.value ? -1 : 1), } }),favorite-failed-message.hide; submit-error:AMP.setState({ favoriteWithCount: previousFavoriteWithCount }),favorite-failed-message.show"> <amp-list width="200" height="56" credentials="include" items="." single-item noloading src="https://cdn.rawgit.com/ilhamsanusi27/amp/7d6d6ce8/eksperimen/count.json"> <template type="amp-mustache"> <div class="favorite-container"> <input type="submit" [class]="favoriteWithCount.value ? 'heart-fill' : 'heart-border'" value="" aria-label="Favorite Toggle"> <div class="favorite-count" [text]="favoriteWithCount.count ? favoriteWithCount.count : ''">{{count}}</div> </div> </template> <div placeholder> <div class="favorite-container"> <input type="submit" disabled class="heart-loading" value="" aria-label="favorite placeholder"> <div class="favorite-count loading">0</div> </div> </div> </amp-list> </form>
 
 <div id="favorite-failed-message" hidden>Error: Could not favorite. <div on="tap:favorite-failed-message.hide" tabindex="0" role="button">CLOSE</div> </div>
