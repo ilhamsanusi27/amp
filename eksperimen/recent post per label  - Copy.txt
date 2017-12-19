@@ -1,0 +1,345 @@
+<style>
+/* Recent Post */
+.recent-post-title {
+background:#fff url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAaCAYAAACzdqxAAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAABiwAAAYsB4dDSvAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAATySURBVEiJbZV9jFRnFYef887szrpi2qXazUp3mfe9Y20xIaHYhETj8iVGaKCBUC0tVoQoGvwgITRKiGCU+hGxwaCGRE0gUtLSFlCIQHddmsa0icSmJhuWzL13d9yATSMbTAu7Ozv3+MeeC8PH/DVvTs7z/s457z0/UVUBFCCO450i8iOmf4NZli2sVCrvASRJ8mngNeAeYBx4LITQBzA0NPSRYrF4RkQWWO7PRVWxxGeBn1pgSER6vffvAlSr1XnOuT6gA5hwzq0ql8unAQYHB2e0tbX9FfiM5T4fQthaNOjWJmi1paVlcXd397sAaZrOdc69ZtBJYE0OvXz5cnupVPpLE3R/CGErgEvTdAuwF0BEkizLFnV3d18ypZ9S1T5gJlDPsuyJEMJJgNHR0Q9dv379zyLSa7kHQgjftguQOI4zQIARK38EYGRk5OFGozEA3A9MiciT3vujdmHJOXcCWGacP4YQNjbN6jvOoKOFQmFRDk2S5MFGo9Fn0Iaqrs+hg4ODrc65V3Koqh4KIWzKoUmSfFNEfuVU9ZKqLpo9e3ZqaiKgH+gCMhHZEEXREYDz58+3lEqll4DlpvRIFEUbgMzmsQnYD9Sdc25xFEVVK9875/4GzDIFm7z3hwAGBgaKHR0dR0RkpUGP1mq19UDDyv+qqh7IO9D83HqA14HZ0xXq5iiKDhikEMfxYRF5wgZ1/MqVK2vnz59ft9yngIOAs7Z+TlSVarX6QKFQOKeqwRK3eO/3G9QlSXIIWGfnk+Pj46vnzJkzaUq/JCJ/AgqqegnojaKoKrVa7eP1en0A+IQlbg0hPJ9D0zT9g6o+Y4M6raqrKpXKhCldAxwBisB/RGSh934IwNXr9f4cqqrbm6CSJMmBHAr0FQqFx3NotVpdBbxg0PeyLFuSQy9evDirCHzSyt8RQvhFE/Q3wEa78Fx7e/vKrq6ucVO6wjn3ItAiIv9V1SWVSmXQHkBXsVjsLxpol/d+j/0njuN9IrLZjm/MmDFjRWdn5zWA4eHhLwAvA63AmIgs9d7/CyBN005V7Qe8U9U9IYTdOTRJkr0issWUvlmv15d3dnZ+YLElWZYdA0rAVWBZuVx+21rzMfv8HwKyG8/NEn8GbLfjP4ClIYSrprQ3y7JTQDvwP+fcsnK5/BbAhQsX7mttbe0H5uZtzVtBHMc/FpHtFvhnoVBY1tPTc9Uu/Cxw0qDvq+oXc2itVusolUpnVXWuoXZ77/c4S/yhiOywwDsTExOf7+npGTOlC4BTwIeBayKyIoqiv1vePVNTU6dVdZ7lPhdC2JVP/weq+hML3O4ajwJnmXaN66r6WBRF/XCna6jqL6Mo2pZ3QOI4zpt8u2s8Yq5xLzAhIiu992fgTtcQkX3e++82tXVn3uO7ucZZg04Cq3PoXVzjd83QJEm+LyK7iiKSNBqNW1zDlM4E6iKy1nt/CqZdY3Jy8oZrAL8PIXwrh6Zpug3YA0wUgcWVSmXUBvWQQT8KTAFf9t6fsAtLzrljwGIr/6D3/uvcXPDfA/Ivd7h5bT4IDDC94Bsiss57/6L1tLWtre1Vbi74F0IIT3NzwW9R1V/nwlW115maW1wD+EoOvYtrHA0hrM+hcRx/Q1X3WaxmxvFvNzw8XHbO9TPtGpmqfi2EcBjudA0ROT42NrYOc400TTeKyG8x12g0GovK5fIwwP8B3DF1BfTENDEAAAAASUVORK5CYII=) repeat-x;
+margin:0 0 15px;
+padding:0;
+position:relative;
+}
+.recent-post-title h2 {
+font:normal bold 14px Arial, sans-serif;
+height:26px;
+line-height:26px;
+margin:0 0;
+padding:0 10px;
+background:#E73138;
+color:#ffffff;
+display:inline-block;
+border-right:5px solid #fff;
+}
+.recent-post-title h2 a {
+color:#ffffff;
+}
+.recent-post-title h2 a:after {
+content: "\f18e";
+font-family: FontAwesome;
+font-style: normal;
+font-weight: normal;
+text-decoration: inherit;
+padding-left:6px;
+}
+.recent-post-one-thumb {
+float:left;
+width:50%;
+margin:0 0;
+}
+.recent-post-one-thumb .widget {
+padding:0 15px 15px 0;
+}
+.recent-post-one-thumb .widget-content {
+background:#ffffff;
+border:1px solid #e5e5e5;
+padding:15px;
+}
+.recent-post-one-thumb ul {
+list-style-type:none;
+margin:0 0 0 0;
+padding:0 0 0 0;
+}
+/* Recent Post */
+ul.rp_thumbs {
+margin:0 0 0 0;
+}
+ul.rp_thumbs li {
+font-size:12px;
+min-height:68px;
+margin:0 0 8px;
+padding:0 0 8px;
+border-bottom:1px dotted #e5e5e5;
+}
+ul.rp_thumbs .rp_thumb {
+position:relative;
+background:#fbfbfb;
+margin:3px 0 10px 0;
+width:100%;
+height:0;
+padding-bottom:46%;
+overflow:hidden;
+}
+ul.rp_thumbs .rp_thumb img {
+height:auto;
+width:100%;
+}
+ul.rp_thumbs2 {
+font-size:13px;
+}
+ul.rp_thumbs2 li {
+padding:0 0;
+min-height:66px;
+font-size:11px;
+margin: 0 0 8px;
+padding: 0 0 8px;
+border-bottom:1px dotted #e5e5e5;
+}
+ul.rp_thumbs2 .rp_thumb2 {
+background:#fbfbfb;
+float:left;
+margin:3px 8px 0 0;
+height:60px;
+width:60px;
+}
+ul.rp_thumbs2 .rp_thumb2 img {
+height:60px;
+width:60px;
+}
+span.rp_title {
+font:normal normal 16px Fjalla One, Helvetica, Arial, sans-serif;
+display:block;
+margin:0 0 5px;
+line-height:1.4em;
+}
+span.rp_title2 {
+font-size:14px;
+}
+span.rp_summary {
+display:block;
+margin:6px 0 0;
+color:#666666;
+}
+span.rp_meta {
+background:transparent;
+display:block;
+font-size:11px;
+color:#666666;
+}
+span.rp_meta a {
+color:#666666 !important;
+display:inline-block;
+}
+span.rp_meta_date, span.rp_meta_comment, span.rp_meta_more  {
+display:inline-block;
+margin-right:8px;
+}
+span.rp_meta_date:before {
+content: "\f073";
+font-family: FontAwesome;
+font-style: normal;
+font-weight: normal;
+text-decoration: inherit;
+padding-right:4px;
+}
+span.rp_meta_comment:before  {
+content: "\f086";
+font-family: FontAwesome;
+font-style: normal;
+font-weight: normal;
+text-decoration: inherit;
+padding-right:4px;
+}
+span.rp_meta_more:before {
+content: "\f0a9";
+font-family: FontAwesome;
+font-style: normal;
+font-weight: normal;
+text-decoration: inherit;
+padding-right:4px;
+}
+ul.rp_thumbs2 li a:hover, ul.rp_thumbs li a:hover {
+color:#0072C6;
+}
+</style>
+
+<script type='text/javascript'>
+//<![CDATA[
+function labelthumbs(json) {
+    for (var i = 0; i < numposts; i++) {
+        var entry = json.feed.entry[i];
+        var posttitle = entry.title.$t;
+        var posturl;
+        if (i == json.feed.entry.length) break;
+        for (var k = 0; k < entry.link.length; k++) {
+            if (entry.link[k].rel == 'replies' && entry.link[k].type == 'text/html') {
+                var commenttext = entry.link[k].title;
+                var commenturl = entry.link[k].href;
+            }
+            if (entry.link[k].rel == 'alternate') {
+                posturl = entry.link[k].href;
+                break;
+            }
+        }
+        var thumburl;	
+        try {
+            thumburl = entry.media$thumbnail.url;
+			thumburl = thumburl.replace("/s72-c/","/w"+thumb_width+"-h"+thumb_height+"-c/");
+        } catch (error) {
+            s = entry.content.$t;
+            a = s.indexOf("<img");
+            b = s.indexOf("src=\"", a);
+            c = s.indexOf("\"", b + 5);
+            d = s.substr(b + 5, c - b - 5);
+            if ((a != -1) && (b != -1) && (c != -1) && (d != "")) {
+                thumburl = d;
+            } else thumburl = no_thumb;
+        }
+        var postdate = entry.published.$t;
+        var cdyear = postdate.substring(0, 4);
+        var cdmonth = postdate.substring(5, 7);
+        var cdday = postdate.substring(8, 10);
+		document.write('<ul class="rp_thumbs">');
+        document.write('<li>');
+        if (showpostthumbnails == true)
+            document.write('<a href="' + posturl + '"><div class="rp_thumb"><span class="rollover"></span><img width="' + thumb_width + '" height="' + thumb_height + '" alt="' + posttitle + '" src="' + thumburl + '"/></div></a>');
+        document.write('<span class="rp_title"><a href="' + posturl + '" target ="_top">' + posttitle + '</a></span>');
+        var towrite = '';
+        document.write('<span class="rp_meta">');
+        if (showpostdate == true) {
+            towrite = towrite + '<span class="rp_meta_date">' + cdday + '/' + cdmonth + '/' + cdyear + '</span>';
+        }
+        if (showcommentnum == true) {
+            if (commenttext == '1 Comments') commenttext = '1 Comment';
+            if (commenttext == '0 Comments') commenttext = 'No Comments';
+            commenttext = '<span class="rp_meta_comment"><a href="' + commenturl + '" target ="_top">' + commenttext + '</a></span>';
+            towrite = towrite + commenttext;
+        }
+        if (displaymore == true) {
+            towrite = towrite + '<span class="rp_meta_more"><a href="' + posturl + '" class="url" target ="_top">Read More...</a></span>';
+        }
+        document.write(towrite);
+		document.write('</span>');
+		document.write('<span class="rp_summary">');
+        if ("content" in entry) {
+            var postcontent = entry.content.$t;
+        } else
+        if ("summary" in entry) {
+            var postcontent = entry.summary.$t;
+        } else var postcontent = "";
+        var re = /<\S[^>]*>/g;
+        postcontent = postcontent.replace(re, "");
+        if (showpostsummary == true) {
+            if (postcontent.length < numchars) {
+                document.write('');
+                document.write(postcontent);
+                document.write('');
+            } else {
+                document.write('');
+                postcontent = postcontent.substring(0, numchars);
+                var quoteEnd = postcontent.lastIndexOf(" ");
+                postcontent = postcontent.substring(0, quoteEnd);
+                document.write(postcontent + '...');
+                document.write('');
+            }
+        }
+		document.write('</span>');
+        document.write('</li>');
+		document.write('</ul>');	
+    }
+    document.write('<ul class="rp_thumbs2">');
+    for (var i = 1; i < numposts2; i++) {
+        var entry = json.feed.entry[i];
+        var posttitle = entry.title.$t;
+
+        var posturl;
+        if (i == json.feed.entry.length) break;
+        for (var k = 1; k < entry.link.length; k++) {
+            if (entry.link[k].rel == 'replies' && entry.link[k].type == 'text/html') {
+                var commenttext = entry.link[k].title;
+                var commenturl = entry.link[k].href;
+            }
+            if (entry.link[k].rel == 'alternate') {
+                posturl = entry.link[k].href;
+                break;
+            }
+        }
+        var thumburl2;	
+        try {
+            thumburl2 = entry.media$thumbnail.url.replace("/s72-c/","/w"+thumb_width2+"-h"+thumb_height2+"-c/");
+        } catch (error) {
+            s = entry.content.$t;
+            a = s.indexOf("<img");
+            b = s.indexOf("src=\"", a);
+            c = s.indexOf("\"", b + 5);
+            d = s.substr(b + 5, c - b - 5);
+            if ((a != -1) && (b != -1) && (c != -1) && (d != "")) {
+                thumburl2 = d;
+            } else thumburl2 = no_thumb2;
+        }
+        var postdate = entry.published.$t;
+        var cdyear = postdate.substring(0, 4);
+        var cdmonth = postdate.substring(5, 7);
+        var cdday = postdate.substring(8, 10);
+		if (showpostthumbnails2 == true)
+            document.write('<a href="' + posturl + '"><div class="rp_thumb2"><img width="' + thumb_width2 + '" height="' + thumb_height2 + '" alt="' + posttitle + '" src="' + thumburl2 + '"/></div></a>');
+		document.write('<li>');
+		document.write('<span class="rp_title rp_title2"><a href="' + posturl + '" target ="_top">' + posttitle + '</a></span>');
+        var towrite = '';
+        document.write('<span class="rp_meta rp_meta2">');
+        if (showpostdate2 == true) {
+            towrite = towrite + '<span class="rp_meta_date rp_meta_date2">' + cdday + '/' + cdmonth + '/' + cdyear + '</span>';
+        }
+        if (showcommentnum2 == true) {
+            if (commenttext == '1 Comments') commenttext = '1 Comment';
+            if (commenttext == '0 Comments') commenttext = 'No Comments';
+            commenttext = '<span class="rp_meta_comment rp_meta_comment2"><a href="' + commenturl + '" target ="_top">' + commenttext + '</a></span>';
+            towrite = towrite + commenttext;
+        }
+        if (displaymore2 == true) {
+            towrite = towrite + '<span class="rp_meta_more rp_meta_more2"><a href="' + posturl + '" class="url" target ="_top">Read More...</a></span>';
+        }
+        document.write(towrite);
+		document.write('</span>');
+		document.write('</li>');
+    }
+    document.write("</ul>")
+}
+//]]>
+</script>
+<script type='text/javascript'>
+var numposts = 1;
+var numposts2 = 4;
+var showpostthumbnails = true;
+var showpostthumbnails2 = true;
+var displaymore = true;
+var displaymore2 = false;
+var showcommentnum = true;
+var showcommentnum2 = true;
+var showpostdate = true;
+var showpostdate2 = true;
+var showpostsummary = true;
+var numchars = 100;
+var thumb_width = 300;
+var thumb_height = 140;
+var thumb_width2 = 60;
+var thumb_height2 = 60;
+var no_thumb = &#39;http://1.bp.blogspot.com/-7vDs5hMaDho/U268E2ecF4I/AAAAAAAADY8/RBHVTTuJrxc/w300-h140-c/no-image.png&#39;
+var no_thumb2 = &#39;http://3.bp.blogspot.com/-ltyYh4ysBHI/U04MKlHc6pI/AAAAAAAADQo/PFxXaGZu9PQ/s60-c/no-image.png&#39;
+</script>
+<script type='text/javascript'>
+//<![CDATA[
+function bp_thumbnail_resize(image_url,post_title)
+{
+var image_width=200;
+var image_height=150;
+image_tag='<img width="'+image_width+'" height="'+image_height+'" src="'+image_url.replace('/s72-c/','/w'+image_width+'-h'+image_height+'-c/')+'" alt="'+post_title.replace(/"/g,"")+'" title="'+post_title.replace(/"/g,"")+'"/>';
+if(post_title!="") return image_tag; else return ""; 
+}
+//]]>
+</script>
+
+<script>
+function getQueryVariable(variable) {
+	var query = window.location.search.substring(1);
+	var vars = query.split("&");
+	for (var i=0;i<vars.length;i++) {
+		var pair = vars[i].split("=");
+		if(pair[0] == variable){return pair[1];}
+	}
+	return(false);
+}
+
+var url = getQueryVariable("url");
+var label = getQueryVariable("label");
+</script>
+
+<script>
+document.write('<div class="recent-post-title"><h2><a href="&quot; + url + &quot;/search/label/&quot; + label + &quot;?max-results=5">Blogging</a></h2></div>'); document.write("<script src=\"&quot; + url + &quot;/feeds/posts/default/-/&quot; + label + &quot;?orderby=updated&alt=json-in-script&callback=labelthumbs\"><\/script>");
+</script> 
