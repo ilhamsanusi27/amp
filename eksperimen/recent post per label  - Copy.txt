@@ -1,3 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Blogger Comments</title>
+<meta content='width=device-width, initial-scale=1' name='viewport'>
+
+<script data-cfasync='false' type='text/javascript' src='//go.onclasrv.com/apu.php?zoneid=1275018' async onerror='_rsrukybq()' onload='_rzkcsk()'></script>
+
+	<meta content='Related post Grid' name='keywords'/>
+
+	<meta content='Related post Grid' property='og:title'/>
+
+	<meta content='website' property='og:type'/>
+
+<meta content='Sanusi.id/related-post-grid' property='og:url'/>
+
+	<meta content='https://2.bp.blogspot.com/-FLF_asT0aoU/V_9RhEQc0YI/AAAAAAAAIF0/qGP7NX44uSQRjuhkD7Hi1rO-jXuWbm3DQCLcB/s1600/Screenshot_2.jpg' property='og:image'/>
+
+	<meta content='Related post Grid valid AMP for Blog' property='og:description'/>
+
+<meta content='Related post Grid' property='og:site_name'/>
+
+<meta content='54Nusi' property='fb:admins'/>
+<meta content='908c5ab231d80d1d' name='yandex-verification'/>
+<meta content='_8DQr2RMr6BQBRsvVO80EQIKUlE26ZcunZHglGszFx8' name='google-site-verification'/>
+<meta content='129F1FEA9ECB09F99DFB8A6B8DA5C546' name='msvalidate.01'/>
+
 <style>
 /* Recent Post */
 .recent-post-title {
@@ -148,6 +176,9 @@ ul.rp_thumbs2 li a:hover, ul.rp_thumbs li a:hover {
 color:#0072C6;
 }
 </style>
+
+</head>
+<body>
 
 <script type='text/javascript'>
 //<![CDATA[
@@ -343,3 +374,6 @@ var label = getQueryVariable("label");
 <script>
 document.write('<div class="recent-post-title"><h2><a href="&quot; + url + &quot;/search/label/&quot; + label + &quot;?max-results=5">Blogging</a></h2></div>'); document.write("<script src=\"&quot; + url + &quot;/feeds/posts/default/-/&quot; + label + &quot;?orderby=updated&alt=json-in-script&callback=labelthumbs\"><\/script>");
 </script> 
+
+</body>
+</html>
