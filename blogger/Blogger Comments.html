@@ -5,25 +5,19 @@
 <title>Blogger Comments</title>
 <meta content='width=device-width, initial-scale=1' name='viewport'>
 
-<script async type='text/javascript' src='//go.mobisla.com/notice.php?p=1275015&interactive=1&pushup=1'></script>
+	<meta content='Blogger Comments' name='keywords'/>
 
-<script src='//go.mobtrks.com/notice.php?p=1308137&interstitial=1'></script>
-
-<script data-cfasync='false' type='text/javascript' src='//go.onclasrv.com/apu.php?zoneid=1275018' async onerror='_rsrukybq()' onload='_rzkcsk()'></script>
-
-	<meta content='Related post Grid' name='keywords'/>
-
-	<meta content='Related post Grid' property='og:title'/>
+	<meta content='Blogger Comments' property='og:title'/>
 
 	<meta content='website' property='og:type'/>
 
-<meta content='Sanusi.id/related-post-grid' property='og:url'/>
+<meta content='Sanusi.id/blogger-comments' property='og:url'/>
 
 	<meta content='https://2.bp.blogspot.com/-FLF_asT0aoU/V_9RhEQc0YI/AAAAAAAAIF0/qGP7NX44uSQRjuhkD7Hi1rO-jXuWbm3DQCLcB/s1600/Screenshot_2.jpg' property='og:image'/>
 
-	<meta content='Related post Grid valid AMP for Blog' property='og:description'/>
+	<meta content='Blogger Comments valid AMP for Blog' property='og:description'/>
 
-<meta content='Related post Grid' property='og:site_name'/>
+<meta content='Blogger Comments' property='og:site_name'/>
 
 <meta content='54Nusi' property='fb:admins'/>
 <meta content='908c5ab231d80d1d' name='yandex-verification'/>
@@ -32,40 +26,473 @@
 
 </head>
 <body>
+
 <script>
 function getQueryVariable(variable) {
-	var query = window.location.search.substring(1);
-	var vars = query.split("&");
-	for (var i=0;i<vars.length;i++) {
-		var pair = vars[i].split("=");
-		if(pair[0] == variable){return pair[1];}
-	}
-	return(false);
+  var query = window.location.search.substring(1);
+  var vars = query.split("&");
+  for (var i=0;i<vars.length;i++) {
+    var pair = vars[i].split("=");
+    if(pair[0] == variable){return pair[1];}
+  }
+  return(false);
 }
-
-var title = getQueryVariable("title");
-var blogID = getQueryVariable("bID");
-var postID = getQueryVariable("pID");
+var data:post.commentSource = getQueryVariable('commentSource');
+var data:post.showThreadedComments = getQueryVariable('showThreadedComments');
+var data:post.allowIframeComments = getQueryVariable('allowIframeComments');
+var data:post.iframeCommentSrc = getQueryVariable('iframeCommentSrc');
+var data:post.url.canonical = getQueryVariable('url.canonical');
+var data:post.viewType = getQueryVariable('viewType');
+var data:post.embedCommentForm = getQueryVariable('embedCommentForm');
+var data:post.addCommentUrl = getQueryVariable('addCommentUrl');
+var data:post.addCommentOnclick = getQueryVariable('addCommentOnclick');
+var data:postCommentMsg = getQueryVariable('postCommentMsg');
+var data:post.commentLabelFull = getQueryVariable('commentLabelFull');
+var data:post.commentHtml = getQueryVariable('commentHtml');
+var data:post.allowNewComments = getQueryVariable('allowNewComments');
+var data:post.noNewCommentsText = getQueryVariable('noNewCommentsText');
+var data:showCmtPopup = getQueryVariable('showCmtPopup');
+var data:post.commentJso = getQueryVariable('commentJso');
+var data:post.commentMsgs = getQueryVariable('commentMsgs');
+var data:post.commentConfig = getQueryVariable('commentConfig');
+var data:mobile = getQueryVariable('mobile');
+var data:blogCommentMessage = getQueryVariable('blogCommentMessage');
+var data:blogTeamBlogMessage = getQueryVariable('blogTeamBlogMessage');
+var data:post.commentFormIframeSrc = getQueryVariable('commentFormIframeSrc');
+var data:cmtIframeInitialHeight = getQueryVariable('cmtIframeInitialHeight');
+var data:post.friendConnectJs = getQueryVariable('friendConnectJs');
+var data:post.cmtfpIframe = getQueryVariable('cmtfpIframe');
+var data:post.appRpcRelayPath = getQueryVariable('appRpcRelayPath');
+var data:widget.instanceId = getQueryVariable('instanceId');
+var data:post.allowComments = getQueryVariable('allowComments');
+var data:post.commentRangeText = getQueryVariable('commentRangeText');
+var data:post.commentPagingRequired = getQueryVariable('commentPagingRequired');
+var data:post.hasOlderLinks = getQueryVariable('hasOlderLinks');
+var data:post.oldLinkClass = getQueryVariable('oldLinkClass');
+var data:post.oldestLinkUrl = getQueryVariable('oldestLinkUrl');
+var data:post.oldestLinkText = getQueryVariable('oldestLinkText');
+var data:post.olderLinkUrl = getQueryVariable('olderLinkUrl');
+var data:post.olderLinkText = getQueryVariable('olderLinkText');
+var data:post.hasNewerLinks = getQueryVariable('hasNewerLinks');
+var data:post.newLinkClass = getQueryVariable('newLinkClass');
+var data:post.newerLinkUrl = getQueryVariable('newerLinkUrl');
+var data:post.newerLinkText = getQueryVariable('newerLinkText');
+var data:post.newestLinkUrl = getQueryVariable('newestLinkUrl');
+var data:post.newestLinkText = getQueryVariable('newestLinkText');
+var data:post.avatarIndentClass = getQueryVariable('avatarIndentClass');
+var data:comment.timestamp = getQueryVariable('comment.timestamp');var data:post.comments = getQueryVariable('comments');
+var data:comment.authorClass = getQueryVariable('authorClass');
+var data:comment.anchorName = getQueryVariable('anchorName');
+var data:comment.favicon = getQueryVariable('favicon');
+var data:blog.enabledCommentProfileImages = getQueryVariable('enabledCommentProfileImages');
+var data:comment.authorAvatarImage = getQueryVariable('authorAvatarImage');
+var data:comment.authorUrl = getQueryVariable('authorUrl');
+var data:comment.author = getQueryVariable('author');
+var data:commentPostedByMsg = getQueryVariable('commentPostedByMsg');
+var data:comment.cmtBodyIdPostfix = getQueryVariable('cmtBodyIdPostfix');
+var data:comment.isDeleted = getQueryVariable('isDeleted');
+var data:comment.body = getQueryVariable('body');
+var data:comment.url = getQueryVariable('comment.url');
+var data:comment.adminClass = getQueryVariable('adminClass');
+var data:comment.deleteUrl = getQueryVariable('comment.deleteUrl');
+var data:top.deleteCommentMsg = getQueryVariable('deleteCommentMsg');
+var data:post.numComments = getQueryVariable('numComments');
+var data:post.addCommentOnclick = getQueryVariable('addCommentOnclick');
+var data:post.url = getQueryVariable('post.url');
+var data:post.url.canonical.http = getQueryVariable('url.canonical.http');
 </script>
-<div class='comments' id='comments'>
- <a name='comments'></a>
- <h4><script type='text/javascript'>
-   document.write('0 Response to &quot; + title + &quot;');</script></h4>
- <div id='Blog1_comments-block-wrapper'>
-  <dl class='avatar-comment-indent' id='comments-block'></dl>
- </div>
- <p class='comment-footer'>
+
+<script>
+document.write('<b:if cond='&quot; + data:post.commentSource + &quot; == 1'>
+    
+  <b:if cond='&quot; + data:post.allowIframeComments + &quot;'>
+    <script src='&quot; + data:post.iframeCommentSrc + &quot;' type='text/javascript'/>
+    <div class='cmt_iframe_holder' data-href='&quot; + data:post.url.canonical + &quot;' data-viewtype='&quot; + data:post.viewType + &quot;'/>
+
+    <b:if cond='&quot; + data:post.embedCommentForm + &quot; == &quot;false&quot;'>
+      <a href='&quot; + data:post.addCommentUrl + &quot;' onclick='&quot; + data:post.addCommentOnclick + &quot;'>&quot; + data:postCommentMsg + &quot;</a>
+    </b:if>
+  </b:if>
+
+  <b:elseif cond='&quot; + data:post.showThreadedComments + &quot;'/>
+
+  <div class='comments' id='comments'>
+    <a name='comments'/>
+    <h4>&quot; + data:post.commentLabelFull + &quot;:</h4>
+
+    <div class='comments-content'>
+
+  <script async='async' expr:src='data:post.commentSrc' type='text/javascript'/>
+
+  <script type='text/javascript'>
+    (function() {
+      var items = &quot; + data:post.commentJso + &quot;;
+      var msgs = &quot; + data:post.commentMsgs + &quot;;
+      var config = &quot + data:post.commentConfig + &quot;;
+
+// <![CDATA[
+      var cursor = null;
+      if (items && items.length > 0) {
+        cursor = parseInt(items[items.length - 1].timestamp) + 1;
+      }
+
+      var bodyFromEntry = function(entry) {
+        if (entry.gd$extendedProperty) {
+          for (var k in entry.gd$extendedProperty) {
+            if (entry.gd$extendedProperty[k].name == 'blogger.contentRemoved') {
+              return '<span class="deleted-comment">' + entry.content.$t + '</span>';
+            }
+          }
+        }
+        return entry.content.$t;
+      }
+
+      var parse = function(data) {
+        cursor = null;
+        var comments = [];
+        if (data && data.feed && data.feed.entry) {
+          for (var i = 0, entry; entry = data.feed.entry[i]; i++) {
+            var comment = {};
+            // comment ID, parsed out of the original id format
+            var id = /blog-(\d+).post-(\d+)/.exec(entry.id.$t);
+            comment.id = id ? id[2] : null;
+            comment.body = bodyFromEntry(entry);
+            comment.timestamp = Date.parse(entry.published.$t) + '';
+            if (entry.author && entry.author.constructor === Array) {
+              var auth = entry.author[0];
+              if (auth) {
+                comment.author = {
+                  name: (auth.name ? auth.name.$t : undefined),
+                  profileUrl: (auth.uri ? auth.uri.$t : undefined),
+                  avatarUrl: (auth.gd$image ? auth.gd$image.src : undefined)
+                };
+              }
+            }
+            if (entry.link) {
+              if (entry.link[2]) {
+                comment.link = comment.permalink = entry.link[2].href;
+              }
+              if (entry.link[3]) {
+                var pid = /.*comments\/default\/(\d+)\?.*/.exec(entry.link[3].href);
+                if (pid && pid[1]) {
+                  comment.parentId = pid[1];
+                }
+              }
+            }
+            comment.deleteclass = 'item-control blog-admin';
+            if (entry.gd$extendedProperty) {
+              for (var k in entry.gd$extendedProperty) {
+                if (entry.gd$extendedProperty[k].name == 'blogger.itemClass') {
+                  comment.deleteclass += ' ' + entry.gd$extendedProperty[k].value;
+                } else if (entry.gd$extendedProperty[k].name == 'blogger.displayTime') {
+                  comment.displayTime = entry.gd$extendedProperty[k].value;
+                }
+              }
+            }
+            comments.push(comment);
+          }
+        }
+        return comments;
+      };
+
+      var paginator = function(callback) {
+        if (hasMore()) {
+          var url = config.feed + '?alt=json&v=2&orderby=published&reverse=false&max-results=50';
+          if (cursor) {
+            url += '&published-min=' + new Date(cursor).toISOString();
+          }
+          window.bloggercomments = function(data) {
+            var parsed = parse(data);
+            cursor = parsed.length < 50 ? null
+                : parseInt(parsed[parsed.length - 1].timestamp) + 1
+            callback(parsed);
+            window.bloggercomments = null;
+          }
+          url += '&callback=bloggercomments';
+          var script = document.createElement('script');
+          script.type = 'text/javascript';
+          script.src = url;
+          document.getElementsByTagName('head')[0].appendChild(script);
+        }
+      };
+      var hasMore = function() {
+        return !!cursor;
+      };
+      var getMeta = function(key, comment) {
+        if ('iswriter' == key) {
+          var matches = !!comment.author
+              && comment.author.name == config.authorName
+              && comment.author.profileUrl == config.authorUrl;
+          return matches ? 'true' : '';
+        } else if ('deletelink' == key) {
+          return config.baseUri + '/delete-comment.g?blogID='
+               + config.blogId + '&postID=' + comment.id;
+        } else if ('deleteclass' == key) {
+          return comment.deleteclass;
+        }
+        return '';
+      };
+
+      var replybox = null;
+      var replyUrlParts = null;
+      var replyParent = undefined;
+
+      var onReply = function(commentId, domId) {
+        if (replybox == null) {
+          // lazily cache replybox, and adjust to suit this style:
+          replybox = document.getElementById('comment-editor');
+          if (replybox != null) {
+            replybox.height = '250px';
+            replybox.style.display = 'block';
+            replyUrlParts = replybox.src.split('#');
+          }
+        }
+        if (replybox && (commentId !== replyParent)) {
+          replybox.src = '';
+          document.getElementById(domId).insertBefore(replybox, null);
+          replybox.src = replyUrlParts[0]
+              + (commentId ? '&parentID=' + commentId : '')
+              + '#' + replyUrlParts[1];
+          replyParent = commentId;
+        }
+      };
+
+      var hash = (window.location.hash || '#').substring(1);
+      var startThread, targetComment;
+      if (/^comment-form_/.test(hash)) {
+        startThread = hash.substring('comment-form_'.length);
+      } else if (/^c[0-9]+$/.test(hash)) {
+        targetComment = hash.substring(1);
+      }
+
+      // Configure commenting API:
+      var configJso = {
+        'maxDepth': config.maxThreadDepth
+      };
+      var provider = {
+        'id': config.postId,
+        'data': items,
+        'loadNext': paginator,
+        'hasMore': hasMore,
+        'getMeta': getMeta,
+        'onReply': onReply,
+        'rendered': true,
+        'initComment': targetComment,
+        'initReplyThread': startThread,
+        'config': configJso,
+        'messages': msgs
+      };
+
+      var render = function() {
+        if (window.goog && window.goog.comments) {
+          var holder = document.getElementById('comment-holder');
+          window.goog.comments.render(holder, provider);
+        }
+      };
+
+      // render now, or queue to render when library loads:
+      if (window.goog && window.goog.comments) {
+        render();
+      } else {
+        window.goog = window.goog || {};
+        window.goog.comments = window.goog.comments || {};
+        window.goog.comments.loadQueue = window.goog.comments.loadQueue || [];
+        window.goog.comments.loadQueue.push(render);
+      }
+    })();
+// ]]>
+  </script>
+
+      <div id='comment-holder'>
+         &quot; + data:post.commentHtml + &quot;
+      </div>
+    </div>
+
+    <p class='comment-footer'>
+      <b:if cond='&quot; + data:post.allowNewComments + &quot;'>
+
   <div class='comment-form'>
-   <a name='comment-form'></a>
-   <h4 id='comment-post-message'>Post a Comment</h4>
-   <div class='pesan-komentar'><p>Silakan tinggalkan komentar spam sobat</p></div>
-   <script type='text/javascript'>
-   document.write('<a href='https://www.blogger.com/comment-iframe.g?blogID=&quot; + blogID + &quot;&amp;postID=&quot; + postID + &quot;&amp;title=&quot + title' id='comment-editor-src'></a>
-   <iframe allowtransparency='true' class='blogger-iframe-colorize blogger-comment-from-post' frameborder='0' height='410' id='comment-editor' name='comment-editor' src='https://www.blogger.com/comment-iframe.g?blogID=&quot; + blogID + &quot;&amp;postID=&quot; + postID + &quot;&amp;title=&quot + title' width='100%'></iframe>');</script>
-   <script src='https://www.blogger.com/static/v1/jsbin/1930376684-comment_from_post_iframe.js' type='text/javascript'></script>
-   <script type='text/javascript'> BLOG_CMT_createIframe('https://www.blogger.com/rpc_relay.html'); </script>
+    <a name='comment-form'/>
+    <b:if cond='&quot; + data:mobile + &quot;'>
+      <p>&quot; + data:blogCommentMessage + &quot;</p>
+      &quot + data:blogTeamBlogMessage + &quot;
+      <a href='&quot; + data:post.commentFormIframeSrc + &quot;' id='comment-editor-src'/>
+      <iframe allowtransparency='true' class='blogger-iframe-colorize blogger-comment-from-post' height='&quot; + data:cmtIframeInitialHeight + &quot;' frameborder='0' id='comment-editor' name='comment-editor' src='' style='display: none' width='100%'/>
+    <b:else/>
+      <p>&quot; + data:blogCommentMessage + &quot;</p>
+      &quot + data:blogTeamBlogMessage + &quot;
+      <a href='&quot; + data:post.commentFormIframeSrc + &quot;' id='comment-editor-src'/>
+      <iframe allowtransparency='true' class='blogger-iframe-colorize blogger-comment-from-post' height='&quot; + data:cmtIframeInitialHeight + &quot;' frameborder='0' id='comment-editor' name='comment-editor' src='' width='100%'/>
+    </b:if>
+    &quot; + data:post.friendConnectJs + &quot;
+    &quot; + data:post.cmtfpIframe + &quot;
+    <script type='text/javascript'>
+      BLOG_CMT_createIframe(&#39;&quot; + data:post.appRpcRelayPath + &quot;&#39;);
+    </script>
   </div>
- </p>
-</div>
+
+      <b:else/>
+        &quot; + data:post.noNewCommentsText + &quot;
+      </b:if>
+    </p>
+
+    <b:if cond='&quot; + data:showCmtPopup + &quot;'>
+      <div id='comment-popup'>
+        <iframe allowtransparency='true' frameborder='0' id='comment-actions' name='comment-actions' scrolling='no'>
+        </iframe>
+      </div>
+    </b:if>
+  </div>
+
+  <b:else/>
+    
+  <div class='comments' id='comments'>
+    <a name='comments'/>
+    <b:if cond='&quot; + data:post.allowComments + &quot;'>
+      <h4>&quot; + data:post.commentLabelFull + &quot;:</h4>
+
+      <b:if cond='&quot; + data:post.commentPagingRequired + &quot;'>
+        <span class='paging-control-container'>
+          <b:if cond='&quot; + data:post.hasOlderLinks + &quot;'>
+            <a class='&quot; + data:post.oldLinkClass + &quot;' href='&quot; + data:post.oldestLinkUrl + &quot;'>&quot; + data:post.oldestLinkText + &quot;</a>
+              &#160;
+            <a class='&quot; + data:post.oldLinkClass + &quot;' href='&quot; + data:post.olderLinkUrl + &quot;'>&quot; + data:post.olderLinkText + &quot;</a>
+              &#160;
+          </b:if>
+
+          &quot; + data:post.commentRangeText + &quot;
+
+          <b:if cond='&quot; + data:post.hasNewerLinks + &quot;'>
+            &#160;
+            <a class='&quot; + data:post.newLinkClass + &quot;' href='&quot; + data:post.newerLinkUrl + &quot;'>&quot; + data:post.newerLinkText + &quot;</a>
+            &#160;
+            <a class='&quot; + data:post.newLinkClass + &quot;' href='&quot; + data:post.newestLinkUrl + &quot;'>&quot; + data:post.newestLinkText + &quot;</a>
+          </b:if>
+        </span>
+      </b:if>
+
+      <div id='&quot; + data:widget.instanceId + &quot;_comments-block-wrapper'>
+        <dl class='&quot; + data:post.avatarIndentClass + &quot;' id='comments-block'>
+          <b:loop values='&quot; + data:post.comments + &quot;' var='comment'>
+            <dt class='comment-author &quot; + data:comment.authorClass' id='&quot; + data:comment.anchorName + &quot;'>
+              <b:if cond='&quot; + data:comment.favicon + &quot;'>
+                <img src='&quot; + data:comment.favicon + &quot;' height='16px' style='margin-bottom:-2px;' width='16px'/>
+              </b:if>
+              <a name='&quot; + data:comment.anchorName + &quot;'/>
+              <b:if cond='&quot; + data:blog.enabledCommentProfileImages + &quot;'>
+                &quot; + data:comment.authorAvatarImage + &quot;
+              </b:if>
+              <b:if cond='&quot; + data:comment.authorUrl + &quot;'>
+                <a href='&quot; + data:comment.authorUrl + &quot;' rel='nofollow'>&quot; + data:comment.author + &quot;</a>
+              <b:else/>
+                &quot; + data:comment.author + &quot;
+              </b:if>
+              &quot; + data:commentPostedByMsg + &quot;
+            </dt>
+            <dd class='comment-body' id='&quot; + data:widget.instanceId + &quot; + &quot; + data:comment.cmtBodyIdPostfix + &quot;'>
+              <b:if cond='&quot; + data:comment.isDeleted + &quot;'>
+                <span class='deleted-comment'>&quot; + data:comment.body + &quot;</span>
+              <b:else/>
+                <p>
+                  &quot; + data:comment.body + &quot;
+                </p>
+              </b:if>
+            </dd>
+            <dd class='comment-footer'>
+              <span class='comment-timestamp'>
+                <a href='&quot; + data:comment.url + &quot;' title='comment permalink'>
+                  &quot; + data:comment.timestamp + &quot;
+                </a>
+                
+  <span class='item-control &quot; + data:comment.adminClass + &quot;'>
+    <b:if cond='&quot; + data:showCmtPopup + &quot;'>
+      <div class='goog-toggle-button'>
+        <div class='goog-inline-block comment-action-icon'/>
+      </div>
+    <b:else/>
+      <a class='comment-delete' href='&quot; + data:comment.deleteUrl + &quot;' title='&quot; + data:top.deleteCommentMsg + &quot;'>
+        <img src='https://resources.blogblog.com/img/icon_delete13.gif'/>
+      </a>
+    </b:if>
+  </span>
+              </span>
+            </dd>
+          </b:loop>
+        </dl>
+      </div>
+
+      <b:if cond='&quot; + data:post.commentPagingRequired + &quot;'>
+        <span class='paging-control-container'>
+          <a class='&quot; + data:post.oldLinkClass + &quot;' href='&quot; + data:post.oldestLinkUrl + &quot;'>
+            &quot; + data:post.oldestLinkText + &quot;
+          </a>
+          <a class='&quot; + data:post.oldLinkClass + &quot;' href='&quot; + data:post.olderLinkUrl + &quot;'>
+            &quot; + data:post.olderLinkText + &quot;
+          </a>
+          &#160;
+          &quot; + data:post.commentRangeText + &quot;
+          &#160;
+          <a class='&quot; + data:post.newLinkClass + &quot;' href='&quot; + data:post.newerLinkUrl + &quot;'>
+            &quot; + data:post.newerLinkText + &quot;
+          </a>
+          <a class='&quot; + data:post.newLinkClass + &quot;' href='&quot; + data:post.newestLinkUrl + &quot;'>
+            &quot; + data:post.newestLinkText + &quot;
+          </a>
+        </span>
+      </b:if>
+
+      <p class='comment-footer'>
+        <b:if cond='&quot; + data:post.embedCommentForm + &quot;'>
+          <b:if cond='&quot; + data:post.allowNewComments + &quot;'>
+
+  <div class='comment-form'>
+    <a name='comment-form'/>
+    <b:if cond='&quot; + data:mobile + &quot;'>
+      <h4 id='comment-post-message'>
+        <a id='&quot; + data:widget.instanceId + &quot;_comment-editor-toggle-link&quot;' href='javascript:void(0)'>&quot; + data:postCommentMsg + &quot;</a></h4>
+      <p>&quot; + data:blogCommentMessage + &quot;</p>
+      &quot + data:blogTeamBlogMessage + &quot;
+      <a href='&quot; + data:post.commentFormIframeSrc + &quot;' id='comment-editor-src'/>
+      <iframe allowtransparency='true' class='blogger-iframe-colorize blogger-comment-from-post' height='&quot; + data:cmtIframeInitialHeight + &quot;' frameborder='0' id='comment-editor' name='comment-editor' src='' style='display: none' width='100%'/>
+    <b:else/>
+      <p>&quot; + data:blogCommentMessage + &quot;</p>
+      &quot + data:blogTeamBlogMessage + &quot;
+      <a href='&quot; + data:post.commentFormIframeSrc + &quot;' id='comment-editor-src'/>
+      <iframe allowtransparency='true' class='blogger-iframe-colorize blogger-comment-from-post' height='&quot; + data:cmtIframeInitialHeight + &quot;' frameborder='0' id='comment-editor' name='comment-editor' src='' width='100%'/>
+    </b:if>
+    &quot; + data:post.friendConnectJs + &quot;
+    &quot; + data:post.cmtfpIframe + &quot;
+    <script type='text/javascript'>
+      BLOG_CMT_createIframe(&#39;&quot; + data:post.appRpcRelayPath + &quot;&#39;);
+    </script>
+  </div>
+          <b:else/>
+            &quot; + data:post.noNewCommentsText + &quot;
+          </b:if>
+        <b:elseif cond='&quot; + data:post.allowComments + &quot;'/>
+          <a href='&quot; + data:post.addCommentUrl + &quot;' onclick='&quot; + data:post.addCommentOnclick + &quot;'>&quot; + data:postCommentMsg + &quot;</a>
+        </b:if>
+      </p>
+    </b:if>
+    <b:if cond='&quot; + data:showCmtPopup + &quot;'>
+      <div id='comment-popup'>
+        <iframe allowtransparency='true' frameborder='0' id='comment-actions' name='comment-actions' scrolling='no'>
+        </iframe>
+      </div>
+    </b:if>
+
+  </div>
+  </b:if>
+
+<b:if cond='&quot; + data:post.commentSource + &quot; == 1'>
+    <span class='cmt_count_iframe_holder' data-count='&auot; + data:post.numComments + &quot;' data-onclick='&quot; + data:post.addCommentOnclick + &quot;' data-post-url='&quot; + data:post.url + &quot;' data-url='&quot; + data:post.url.canonical.http + &quot;'>
+    </span>
+  <b:else/>
+    <a class='comment-link' href='&quot; + data:post.addCommentUrl + &quot;' onclick='&quot; + data:post.addCommentOnclick + &quot;'>
+      &quot; + data:post.commentLabelFull + &quot;:
+    </a>
+  </b:if>');
+</script>
+
 </body>
 </html>
