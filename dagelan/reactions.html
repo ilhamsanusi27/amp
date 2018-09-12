@@ -1,2 +1,17 @@
-<html><head></head><body><div class="sharethis-inline-reaction-buttons"></div><script src="//platform-api.sharethis.com/js/sharethis.js#property=5b8b2549299a560011af0c69&amp;product=inline-reaction-buttons"></script>
-</body></html>
+<html><head><link rel="stylesheet" type="text/css" href="https://dagelan.org/assets/css/mobile_dagelan.org-icons.data.svg.9409e1b5.css"/>
+<link rel="stylesheet" type="text/css" href="https://dagelan.org/assets/css/mobile_dagelan.org.71dad0ad.css" /><script>
+function getQueryVariable(variable) { var query = window.location.search.substring(1); var vars = query.split("&amp;"); for (var i=0;i&lt;vars.length;i++) { var pair = vars[i].split("="); if(pair[0] == variable){return pair[1];} } return(false); }
+var data = getQueryVariable("data");
+</script><script>
+!function(){Array.prototype.remove=function(){for(var e,t,i=arguments,o=i.length;o&&this.length;)for(e=i[--o];-1!==(t=this.indexOf(e));)this.splice(t,1);return this};var e=document.createElement("script");e.src="https://www.gstatic.com/firebasejs/5.4.2/firebase.js",e.onload=function(){firebase.initializeApp({apiKey:"AIzaSyDBSgS8Rurl7OnT2Ypk_5AKfS8vcDkl7zM",databaseURL:"https://reactions-button.firebaseio.com",projectId:"reactions-button"}),function(e){for(var t=document.getElementsByClassName("reactions"),i=0,o=t[i];i<t.length;i++){var a=o.getAttribute("data-id"),r=JSON.parse(localStorage.getItem("liked"))||[],c=0;e.ref("suka/"+a+"/total").on("value",function(e){-1!==r.indexOf(a)&&o.querySelector(".suka").classList.add("active"),c=e.val()||0,o.querySelector(".suka-total").innerText=c}),o.querySelector("a").addEventListener("click",function(){o.querySelector(".suka").classList.toggle("active"),o.querySelector(".suka").classList.contains("active")?(r.push(a),localStorage.setItem("liked",JSON.stringify(r)),c++):(r.remove(a),localStorage.setItem("liked",JSON.stringify(r)),c--),e.ref("suka/"+a+"/total").set(c)})}}(firebase.database())},document.body.append(e)}();
+</script></head><body>
+
+      <!-- reaction -->
+      <div class="article-readpage--section"><section id="thumbs-detail" class="js-thumbs-detail"><div id="thumbs" class="reactions" data-id='ilham'><h4 class="reactions__title"></h4><ul class="reactions__list js-reaction-container"><li class="reactions--item js-reaction-button">
+ <a id="suka-btn" class="reactions--item__link" rel="nofollow" href="javascript:;">
+  <div class="reactions--item__icon suka"><i class="i-reactions-suka"></i></div>
+  <span class="reactions--item__count suka-total">0</span>
+  <span class="reactions--item__name">suka</span>
+ </a>
+</li><li class="reactions--item js-reaction-button"><a id="lucu-btn" href="javascript:;" class="reactions--item__link" rel="nofollow"><div class="reactions--item__icon lucu"><i class="i-reactions-lucu"></i></div><span class="reactions--item__count lucu-total">0</span><span class="reactions--item__name">lucu</span></a></li><li class="reactions--item js-reaction-button"><a id="kaget-btn" class="reactions--item__link" rel="nofollow" href="javascript:;"><div class="reactions--item__icon kaget"><i class="i-reactions-kaget"></i></div><span class="reactions--item__count kaget-total">0</span><span class="reactions--item__name">kaget</span></a></li><li class="reactions--item js-reaction-button"><a id="sedih-btn" class="reactions--item__link" rel="nofollow" href="javascript:;"><div class="reactions--item__icon sedih"><i class="i-reactions-sedih"></i></div><span class="reactions--item__count sedih-total">0</span><span class="reactions--item__name">sedih</span></a></li><li class="reactions--item js-reaction-button"><a id="marah-btn" class="reactions--item__link" rel="nofollow" href="javascript:;"><div class="reactions--item__icon marah"><i class="i-reactions-marah"></i></div><span class="reactions--item__count marah-total">0</span><span class="reactions--item__name">marah</span></a></li></ul></div></section>
+      </div></body></html>
