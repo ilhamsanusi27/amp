@@ -1,0 +1,17 @@
+{			  
+			"name": "Dagelan Media",
+			"short_name": "Dagelan",
+			"description": "Berita Indonesia Terkini",
+			"icons": 
+			    {
+			      "src": "https://1.bp.blogspot.com/-qzf4gGYEJuU/XNCo25YZb4I/AAAAAAAABuI/TSAKwU4js4YBbUll07wWAb-3QLD0yJIcgCLcBGAs/s1600/dg-media-en.png",
+			      "sizes": "192x192",
+			      "type": "image\/png"
+			    },
+			"background_color": "#D5E0EB",
+			"theme_color": "#D5E0EB",
+			"display": "standalone",
+			"orientation": "portrait",
+			"start_url": "/",
+			"scope": "/"
+		}
